@@ -42,10 +42,21 @@ dependencies {
 
     implementation(libs.compose.runtime)
     implementation(libs.glance.appwidget)
+    implementation(libs.glance.material)
     implementation(libs.retrofit)
     implementation(libs.converter.gson)
     implementation(libs.coroutines.android)
     implementation(libs.lifecycle.viewmodel.ktx)
+    implementation(libs.lifecycle.livedata.ktx)
+    
+    // WorkManager
+    implementation(libs.androidx.work.runtime.ktx)
+    
+    // Koin
+    implementation(libs.koin.android)
+    implementation(libs.koin.androidx.compose)
+    implementation(libs.androidx.runtime.livedata)
+    implementation(libs.androidx.ui.tooling.preview.android)
 
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
